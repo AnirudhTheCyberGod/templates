@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>This is my web page</title>
+    <link rel="stylesheet" type="text/css" href="google f.css">
+</head>
+<body>
+
+    <div class="form">
+        <div class="title-div">
+            <h1>SWAPAN MANDI</h1>
+            <p>This is a google form. This form is created with HTML and CSS.</p>
+            <p class="required">*Required</p>
+        </div>
+
+        <!-- Corrected form action to point to your Flask server endpoint -->
+        <form id="myForm" action="http://127.0.0.1:5000/submit" method="POST">
+            <div class="name-div">
+                <div class="name">What is your name?<span class="required">*</span></div>
+                <div class="input-div"><input type="text" name="name" placeholder="Your answer"></div>
+            </div>
+
+            <div class="college-div">
+                <div class="name">Enter your college name.</div>
+                <div class="input-div"><input type="text" name="college" placeholder="Your answer"></div>
+            </div>
+
+            <div class="gmail-div">
+                <div class="name">Enter your email.<span class="required">*</span></div>
+                <div class="input-div"><input type="email" name="email" placeholder="Your email"></div>
+            </div>
+
+            <div class="mobile-div">
+                <div class="name">Enter your mobile no.</div>
+                <div class="input-div"><input type="tel" name="mobile" placeholder="Your answer"></div>
+            </div>
+
+            <div>
+                <input class="btn" type="submit" value="Submit">
+            </div>
+        </form>
+
+        <div class="last-div">
+            <p class="never">Never submit passwords through Google Forms.</p>
+            <p class="term">This content is neither created nor endorsed by Google, Report Abuse - Term of Service - Private Policy</p>
+            <h2>Google Forms</h2>
+        </div>
+    </div>
+
+    <script>
+        // JavaScript code for sending data to the server (as you provided in your question)
+        // ...
+    </script>
+</body>
+</html>
